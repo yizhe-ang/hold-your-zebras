@@ -9,7 +9,8 @@ window.createScrolly = function(scrollySelector) {
     var boundingWidth = d3.select('.viz--1').node().getBoundingClientRect().width;
     var size = boundingWidth < 500 ? boundingWidth : 500;
     var vizSize = size - margin.top - margin.bottom;
-    var circleSize = 20;
+    // var circleSize = 20;
+    var circleSize = boundingWidth < 500 ? 15 : 20;
     var rectSize = vizSize/9.0;
 
     var position = d3.scaleLinear()
