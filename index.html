@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<meta charset='utf-8' />
+<title>Hold your zebras</title>
+<link rel="icon" href="img/favicon.ico">
+<link rel='stylesheet' href='style.css' media='screen' />
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Anton|Noto+Serif:400,700|PT+Serif:400,700|Roboto+Mono:400,700|Droid+Sans:400,700|Mada:400,700|Fira+Sans:400,700" rel="stylesheet">
+<!-- BODY STARTS HERE -->
+<body>
+    <!-- HEADER STARTS HERE -->
+    <header>
+
+    </header>
+    <!-- TITLE STARTS HERE -->
+    <div class='title'>
+        <div class='title__sub'>
+            <h1 class='title__header'>
+                <mark>Hold</mark>
+                <br />
+                <mark>your</mark>
+                <br />
+                <mark>zebras</mark>
+            </h1>
+            <p class='title__sub-header'>
+                <mark>Visualizing the</mark>
+                <br />
+                <mark>Base Rate Fallacy</mark>
+            </p>
+        </div>
+    </div>
+    <!-- ARTICLE STARTS HERE -->
+    <!-- prose - each paragraph -->
+    <!-- <svg class='svg'></svg> -->
+    <div class='prose'>
+        <p>
+            Robert is a man of tiny stature from the United States who wears glasses and likes solving puzzles.
+             He is more likely to be,
+         </br>
+            (a) A truck driver, or
+        </br>
+            (b) A computer science student at Stanford?
+        </p>
+        <p>
+            If your mind was drawn to the answer (b), this is the base rate fallacy at work here.
+            You probably figured that the description of Robert wouldn’t fit in too well with your image or stereotype of truck drivers.
+            But if you would to take a step back and think about the bigger picture -
+            there are clearly way more truck drivers in the United States,
+            than students in a certain university in California.
+            Hence, it follows that Robert is more likely to be a truck driver!
+        </p>
+        <p>
+            The <mark style="background-color:#FFECB3;">vivid and oddly specific description</mark> has led you to neglect any statistical or general information -
+            what is known as <mark style="background-color:#FFCDD2;">base rate information</mark> (and hence the name of this cognitive error). Your mind did not attempt to incorporate any prior knowledge into your reasoning, as it had never occurred to be relevant, and simply embraced any causal explanations.
+        </p>
+    </div>
+    <div class='prose'>
+        <h2 class='prose__header'>
+            When Health Screenings are Unhealthy
+        </h2>
+        <p>
+            Judging someone's profession doesn't seem like much of a big deal. But what happens if our reliance on our
+            intuitive judgments can potentially pose real-life consequences?
+            Let's take a closer look at an example that you might be able to relate to - health screenings. Suppose that you are a woman reaching her forties.
+            You are well aware that breast cancer is the most  common cancer among women, and that an early diagnosis can increase the chance of recovery. So why not make that trip down to the clinic?
+            Better to be safe than sorry, right? Plus, a mammography will only incorrectly detect breast cancer on a <a href='http://www.bcsc-research.org/statistics/performance/screening/2009/perf_age.html'>healthy person 9% of the time</a>,
+            which does seem pretty reliable.
+        </p>
+        <p>
+            So let's say you got your mammogram done, but unfortunately, you are surprised by a positive result. Here’s the important question:
+            given the accuracy of the mammogram test,
+            <b>what is the probability that you actually have breast cancer?</b>
+        </p>
+        <p>
+            We're about to do some simple calculations, so let me visualize the numbers for you:
+        </p>
+    </div>
+
+    <!-- SCROLLY-TELLY STARTS HERE -->
+    <div class='scrolly'>
+        <!-- <div class='scrolly__prose'> -->
+            <div class='prose__step'>
+                <p>
+                    Suppose 100,000 women in their forties decide to undergo a mammogram examination.<br />
+                    Let’s visualize 1 <span class='dot--normal'>dot</span>for every 1,000 women, for a total of 100 dots.
+                </p>
+            </div>
+            <div class='prose__step'>
+                <p>
+                    For the sake of example, let’s assume breast cancer affects <mark class='mark--disease'>1% of the population.</mark>
+                </p>
+            </div>
+            <div class='prose__step'>
+                <p>
+                    The test is rather accurate; it always correctly identifies those who have the disease.
+                    However, <mark class='mark--falsepositive'>roughly 9% of mammograms will generate a false positive,</mark> meaning that the person tests positive but does not actually have the disease.
+                </p>
+            </div>
+            <div class='prose__step'>
+                <p>
+                    Hence, the results of the screening are as follows: <mark style="background-color:#FFCDD2;">1,000 women</mark> are correctly found to have breast cancer.
+                     But of the remaining 99,000 healthy ones, <mark style="background-color:#FFECB3;">around 8,910</mark> are incorrectly identified to have breast cancer.
+                </p>
+            </div>
+            <div class='prose__step'>
+                <p>
+                    Putting it all together, we can calculate the probability of an inaccurate positive result:
+                    a total of 9,910 women will be revealed to have breast cancer,
+                    but only 1,000 of them actually carry the disease. <b>In other words, the probability of
+                    you having breast cancer is a mere 10%!</b>
+                </p>
+            </div>
+        <!-- </div> -->
+        <div class='scrolly__viz'>
+            <div class='viz viz--1'>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class='prose'>
+        <h2 class='prose__header'>
+            Don't neglect your horses
+        </h2>
+        <p>
+            Despite the accuracy of the test, a bulk of the people who test positive in the mammogram examination
+            do not actually have the disease! If you have tried experimenting with the sliders in the visualization, you might have noticed a trend -
+            increasing the prevalence of the disease reduces the proportion of false positives.
+        </p>
+        <p>
+            Hence, what is responsible for this seemingly counter-intuitive phenomenon is simply our failure to recognize the base rate -
+            which in this case, is the <mark style="background-color:#FFCDD2;">low rate of breast cancer in the population.</mark>
+            No matter <mark style="background-color:#FFECB3;">how reliable the test is,</mark> the rare occurrence of the disease in the population will always guarantee a sizeable proportion of
+            false positive results.
+        </p>
+        <p>
+            This is important as
+            mass screenings could result in
+            overdiagnosis of patients and unnecessary invasive follow-up treatments like surgery and chemotherapy.
+            That is why
+            <a href='https://www.theguardian.com/science/blog/2014/jan/03/patients-truth-health-screening-harm-good'>doctors only recommend</a>
+            health screenings on patients with high risk factors, such as age or a family history of the disease (i.e. increasing the base rate and hence the accuracy of the test).
+        </p>
+        <img src='img/HORSEY.png' alt='horse' />
+        <p>
+            In the medical profession, a common saying beaten into the heads of budding doctors is: "When you hear hoofbeats,
+            think of horses not zebras." In the context of their practice, it cautions medical students not to make any rare diagnoses
+            before considering the more common diseases. It's easy to fall prey to the base-rate fallacy
+            (<a href='https://www.ncbi.nlm.nih.gov/pubmed/16840441'>even two-thirds of doctors fail</a> to judge accurately the efficacy of health screenings),
+            but hopefully even a rudimentary understanding of it will help you arrive at proper judgments, conclusions and make smarter decisions.
+        </p>
+        <p>
+            So whether you are estimating the odds of success of your first business venture, the likelihood of your child getting into Havard,
+            or the chance of landing a spot at Google with your computer science degree,
+            be sure to ignore any specific information, and focus on the base rate -
+            remember to hold your zebras, and utilize your horse sense instead.
+        </p>
+    </div>
+
+    <div class='footer'>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src='graph-scroll.js'></script>
+    <script src='main.js'></script>
+</body>
