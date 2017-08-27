@@ -179,7 +179,7 @@ window.createScrolly = function(scrollySelector) {
                 .attr('stroke', 'none')
                 .attr('fill', '#FFE082')
                 .attr('width', rectPosition.bandwidth())
-                .attr('y', 210)
+                .attr('y', 60)
                 .attr('x', function(d, i) { return rectPosition(i); })
                 .transition().duration(0).delay(450)
                 .attr('width', function(d, i) { return i===0 ? rectPosition.bandwidth()*9 : rectPosition.bandwidth(); })
@@ -190,7 +190,7 @@ window.createScrolly = function(scrollySelector) {
                 .attr('fill', '#EF9A9A')
                 .attr('stroke', 'none')
                 .attr('width', rectPosition.bandwidth())
-                .attr('y', 210)
+                .attr('y', 60)
                 .attr('x', rectPosition(9))
                 .transition().duration(0).delay(450)
                 .attr('width', vizSize)
@@ -278,7 +278,7 @@ window.createScrolly = function(scrollySelector) {
 
         // interactive labels and slider
         var interactive = viz.append('g').attr('class', 'interactive')
-                        .attr('transform', translate(0, 250))
+                        .attr('transform', translate(0, 100))
                         .attr('opacity', 0)
                         .style('display', 'none');
         var statFalsePositive = interactive.append('g').attr('class', 'stat stat--falsepositive');
