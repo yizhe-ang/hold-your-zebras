@@ -80,6 +80,17 @@ mark {
 /* 60 to 75 characters per line,  35 to 40 for mobile devices*/
 /* line height should be approx 150% of the font size */
 /* longer line height for mobile devices*/
+.link--home {
+    display: block;
+    border: none;
+    width: 32px;
+    margin: 0 auto;
+}
+
+/*.link--home img {
+    display: inline;
+}*/
+
 .prose {
     max-width: 640px;
     margin: 0 auto;
