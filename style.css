@@ -113,6 +113,7 @@ mark {
 .prose img {
     display: block;
     margin: 30px auto;
+    margin-right: 0;
 }
 
 
